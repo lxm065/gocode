@@ -40,7 +40,7 @@ func main() {
 
 	r.GET("/index", func(ctx *gin.Context) {
 		ctx.HTML(http.StatusOK, "index.html", gin.H{
-			"msg": "这是go后台传来的数据",
+			"message": "这是go后台传来的数据",
 		})
 	})
 

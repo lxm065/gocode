@@ -2,12 +2,12 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/thinkerou/favicon"
+	// "github.com/thinkerou/favicon"
 )
 
 func main() {
 	r := gin.Default()
-	r.Use(favicon.New("./1.ico"))
+	// r.Use(favicon.New("./1.ico"))
 
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
